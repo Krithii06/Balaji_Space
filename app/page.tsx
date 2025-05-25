@@ -14,7 +14,9 @@ import ContactSection from '@/components/ContactSection';
 
 
 export default function Page() {
-  const [activeTab, setActiveTab] = useState<'home' | 'projects' | 'publications' | 'research' | 'awards' | 'certification'>('home');
+  const [activeTab, setActiveTab] = useState<
+  'home' | 'projects' | 'publications' | 'research' | 'awards' | 'certification' | 'upcomingbook' | 'contact'
+>('home');
 
   return (
     <div className="flex min-h-screen bg-gray-50">

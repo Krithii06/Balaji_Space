@@ -1,4 +1,10 @@
-const Sidebar = () => {
+import { TabType } from "./types";
+interface Props {
+  activeTab: TabType;
+  setActiveTab: (tab: TabType) => void;
+}
+const Sidebar = ({ activeTab, setActiveTab }: Props) => {
+  
   return (
     <aside className="w-80 bg-[#111827] text-white p-8 rounded-2xl shadow-2xl border border-white/10">
       {/* Name at the top */}

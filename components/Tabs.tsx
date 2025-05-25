@@ -1,3 +1,4 @@
+
 type TabType =
   | 'home'
   | 'projects'
@@ -8,12 +9,12 @@ type TabType =
   | 'upcomingbook'
   | 'contact'; // Added 'contact' tab
 
-type TabProps = {
+interface Props {
   activeTab: TabType;
   setActiveTab: (tab: TabType) => void;
-};
+}
 
-const Tabs = ({ activeTab, setActiveTab }: TabProps) => {
+const Tabs = ({ activeTab, setActiveTab }: Props) => {
   return (
     <div className="flex flex-wrap gap-2 mb-4">
       {/* About Tab */}
