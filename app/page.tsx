@@ -9,8 +9,7 @@ import ResearchExperience from '@/components/ResearchExperience';
 import Home from '@/components/Home';
 import Awards from '@/components/Awards';
 import Certification from '@/components/Certification';
-import UpcomingBook from '@/components/Book';
-import Contact from '@/components/ContactSection'; // Add this import
+import UpcomingBook from '@/components/Book';// Add this import
 import ContactSection from '@/components/ContactSection';
 
 
