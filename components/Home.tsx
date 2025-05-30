@@ -86,7 +86,6 @@ const Home = () => {
     <li>Embedded Computing for Autonomous Systems</li>
     <li>Development of Embedded Operating Systems and Firmware</li>
     <li>Control Systems Theory applied to Robotics and Space Missions</li>
-    <li>Sensor Fusion and Data Analytics for Environmental Monitoring</li>
     <li>AI Integration in Educational Technologies</li>
   </ul>
   <p className="mt-3 text-sm italic text-gray-600">
