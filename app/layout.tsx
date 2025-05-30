@@ -20,7 +20,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable}`}>
       <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen font-sans antialiased transition-colors duration-300">
-        {children}
+        {/* Responsive container wrapper */}
+        <main className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          {children}
+        </main>
       </body>
     </html>
   );

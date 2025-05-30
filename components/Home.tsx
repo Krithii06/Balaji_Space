@@ -1,22 +1,23 @@
 import React from 'react';
 
-
 const Home = () => {
   return (
-    <main className="flex flex-col items-center min-h-screen p-6 bg-gray-50 text-gray-900">
-      <div className="relative shadow-md rounded-2xl p-8 max-w-4xl w-full bg-white border border-gray-200">
+    <main className="flex flex-col items-center min-h-screen p-4 sm:p-6 bg-gray-50 text-gray-900">
+      <div className="relative shadow-md rounded-2xl p-6 sm:p-8 max-w-4xl w-full bg-white border border-gray-200">
 
-        {/* Resume button top-right */}
-        <a
-          href="Balaji_Resume.pdf" // ← Replace with your actual resume URL
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute top-6 right-6 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          View My Resume
-        </a>
+        {/* Resume button - Responsive Positioning */}
+        <div className="flex justify-center sm:justify-end mb-6">
+          <a
+            href="Balaji_Resume.pdf" // ← Replace with your actual resume URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 sm:px-5 sm:py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition text-sm sm:text-base"
+          >
+            View My Resume
+          </a>
+        </div>
 
-        <h1 className="text-4xl font-extrabold mb-8 text-center text-blue-600 tracking-wide">
+        <h1 className="text-3xl sm:text-4xl font-extrabold mb-8 text-center text-blue-600 tracking-wide">
           About Me
         </h1>
 
@@ -40,7 +41,7 @@ const Home = () => {
             intelligence to support next-generation aerospace missions and robotics innovations.
           </p>
           <p className="text-justify leading-relaxed">
-            My long-term goal is to contribute to the development of autonomous, space-grade systems
+             My long-term goal is to contribute to the development of autonomous, space-grade systems
             that can operate independently in unknown or harsh environments, enhancing both scientific
             discovery and human safety.
           </p>
@@ -52,8 +53,8 @@ const Home = () => {
             Education Timeline
           </h2>
           <div className="space-y-6">
-            <div className="flex items-start space-x-6">
-              <time className="min-w-[110px] font-semibold text-blue-600 text-sm tracking-wide">
+            <div className="flex flex-col sm:flex-row items-start sm:space-x-6">
+              <time className="min-w-[110px] font-semibold text-blue-600 text-sm tracking-wide mb-1 sm:mb-0">
                 2021 - 2025 ----
               </time>
               <div>
@@ -63,8 +64,8 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-6">
-              <time className="min-w-[110px] font-semibold text-blue-600 text-sm tracking-wide">
+            <div className="flex flex-col sm:flex-row items-start sm:space-x-6">
+              <time className="min-w-[110px] font-semibold text-blue-600 text-sm tracking-wide mb-1 sm:mb-0">
                 2020 - 2021 ----
               </time>
               <div>
@@ -77,48 +78,34 @@ const Home = () => {
 
         {/* Research Interests */}
         <section className="mb-10">
-  <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b border-gray-300 pb-2">
-    Research Interests
-  </h2>
-  <ul className="list-disc list-inside space-y-2 text-gray-700">
-    <li>Embedded Systems Design and Optimization for Real-Time Applications</li>
-    <li>Automation Robotics and Intelligent Control Systems</li>
-    <li>Embedded Computing for Autonomous Systems</li>
-    <li>Development of Embedded Operating Systems and Firmware</li>
-    <li>Control Systems Theory applied to Robotics and Space Missions</li>
-    <li>AI Integration in Educational Technologies</li>
-  </ul>
-  <p className="mt-3 text-sm italic text-gray-600">
-    Passionate about advancing embedded hardware, automation robotics, and intelligent systems for aerospace applications. My interests align with NASA JPL’s pioneering space exploration missions and Microsoft’s innovation in cloud, AI, and IoT platforms supporting next-generation embedded and robotic solutions.
-  </p>
-</section>
-
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b border-gray-300 pb-2">
+            Research Interests
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <li>Embedded Systems Design and Optimization for Real-Time Applications</li>
+            <li>Automation Robotics and Intelligent Control Systems</li>
+            <li>Embedded Computing for Autonomous Systems</li>
+            <li>Development of Embedded Operating Systems and Firmware</li>
+            <li>Control Systems Theory applied to Robotics and Space Missions</li>
+            <li>AI Integration in Educational Technologies</li>
+          </ul>
+          <p className="mt-3 text-sm italic text-gray-600">
+            Passionate about advancing embedded hardware, automation robotics, and intelligent systems...
+          </p>
+        </section>
 
         {/* Skills & Tools */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b border-gray-300 pb-2">
             Skills & Tools
           </h2>
-
           <div className="space-y-4 text-gray-900 font-semibold">
-            <p>
-              <span className="text-blue-600">Technical Skills:</span> Python, FreeRTOS, Embedded C
-            </p>
-            <p>
-              <span className="text-blue-600">Firmware Skills:</span> Firmware engineering, Sensor Interfacing, Real-Time Systems
-            </p>
-            <p>
-              <span className="text-blue-600">Cloud & Frameworks:</span> G-Firebase, Microsoft Azure, React-JS
-            </p>
-            <p>
-              <span className="text-blue-600">Systems & Design:</span> Satellite Systems, Fusion360 3D Models
-            </p>
-            <p>
-              <span className="text-blue-600">Aerospace Engineering:</span> Basic Rocket Engines (Solid & Liquid), Mini Satellite Designing & Development
-            </p>
-            <p>
-              <span className="text-blue-600">Tools:</span> VS Code, Jupyter Notebook.
-            </p>
+            <p><span className="text-blue-600">Technical Skills:</span> Python, FreeRTOS, Embedded C</p>
+            <p><span className="text-blue-600">Firmware Skills:</span> Firmware engineering, Sensor Interfacing, Real-Time Systems</p>
+            <p><span className="text-blue-600">Cloud & Frameworks:</span> G-Firebase, Microsoft Azure, React-JS</p>
+            <p><span className="text-blue-600">Systems & Design:</span> Satellite Systems, Fusion360 3D Models</p>
+            <p><span className="text-blue-600">Aerospace Engineering:</span> Basic Rocket Engines (Solid & Liquid), Mini Satellite Designing & Development</p>
+            <p><span className="text-blue-600">Tools:</span> VS Code, Jupyter Notebook.</p>
           </div>
         </section>
       </div>
